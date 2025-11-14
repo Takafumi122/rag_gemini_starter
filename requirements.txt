@@ -1,0 +1,18 @@
+# RAGフレームワークのコアライブラリ
+langchain
+# LangChainのコミュニティ統合パッケージ
+langchain-community
+# LangChainでGeminiモデルを使用するための統合パッケージ
+langchain-google-genai
+# ローカルで手軽に使えるベクトルデータベース
+chromadb
+# Web UI用
+streamlit
+# 環境変数（.env）の読み込み用
+python-dotenv
+# その他の依存関係
+pydantic>=2.0
+
+# --- ドキュメントロードに必要なパッケージ ---
+unstructured      
+markdown         
