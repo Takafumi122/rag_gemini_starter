@@ -83,7 +83,7 @@ def setup_rag_chain():
     # --- 3. RAGチェーンの構築（プロンプトとLLM） ---
     llm = ChatGoogleGenerativeAI(model=MODEL_NAME)
     
-    # プロンプトテンプレートの定義 (CoT強化版を使用)
+    # プロンプトテンプレートの定義 
     system_template = (
         "あなたは製造業の新人教育向けRAGアシスタントです。回答は常に断定的な口調を使用してください。\n"
         "回答は、以下の【根拠】の範囲内でのみ行い、根拠に無い情報は**一切推測せず**、その場合は**「不明」**とだけ回答してください。\n"
@@ -109,9 +109,6 @@ def setup_rag_chain():
     rag_chain = create_retrieval_chain(retriever, document_chain)
     
     return rag_chain
-
-# ... (answer関数とif __name__ブロックは変更なし)
-# main.pyの残りの部分は、前の回答で提示したコードと同じです。
 
 def answer(question: str) -> str:
     """
