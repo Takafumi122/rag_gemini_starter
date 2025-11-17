@@ -16,3 +16,5 @@ pydantic>=2.0
 # --- ドキュメントロードに必要なパッケージ ---
 unstructured      
 markdown         
+# 検索精度の向上のために追加したキーワード検索ライブラリ
+rank-bm25
